@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <form>
+    <label for="password">Votre mot de passe : </label> <input type="text" name="password" id="password" />
+    <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" />
+    <button type="button" name="button" id="button">Vérification</button>
+  </form>
+  <script>
+  button.addEventListener("click", function button() {
+    if (password.value == confirmPassword.value){
+      password.style.border= "3px solid green";
+      confirmPassword.style.border="3px solid green";
+    } else {
+      password.style.border= "3px solid red";
+      confirmPassword.style.border="3px solid red";
+    }
+  })
+
+  </script>
+</body>
+</html>
